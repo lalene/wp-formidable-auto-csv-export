@@ -1,0 +1,16 @@
+// Create new cron event
+// Add new PHP cron
+// paste this code
+
+ $url = "https://your-website.com/?export_entries=".time()."&form_name=contact";
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($curl);
+    curl_close($curl);
+    
+    // Process the response
+    if ($response === false) {
+        	
+    } else {
+			
+    }
